@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" class="max-w-[2560px] mx-auto max-h-[1440px] bg-[#0B0D17]">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Space tourism website</title>
+
+  <style>
+    
+    .font-barlow {
+      font-family: 'Barlow Condensed', sans-serif;
+    }
+
+    .font-bellefair {
+      font-family: 'Bellefair', serif;
+    }
+  </style>
+  <script src="https://cdn.tailwindcss.com/"></script>
+</head>
+<body class="bg-[url('./assets/technology/background-technology-mobile.jpg')] md:bg-[url('./assets/technology/background-technology-tablet.jpg')] lg:bg-[url('./assets/technology/background-technology-desktop.jpg')] bg-cover bg-no-repeat text-center text-white w-full min-h-screen overflow-x-hidden">
+    <div id="mobile-menu" class="fixed top-0 right-0 w-[70vw] h-full z-50 flex flex-col justify-between transform translate-x-full transition-transform duration-300 backdrop-blur-md lg:hidden">
+    <div class="flex justify-between items-center w-11/12 max-w-sm mx-auto mt-8 mb-6 md:w-full md:max-w-none md:mx-0 md:px-6">
+      <button aria-label="Close Menu" class="absolute top-8 right-8 z-50">
+        <img src="./assets/shared/icon-close.svg" alt="Close Menu Icon" class="h-6 w-6">
+      </button>
+    </div>
+    <nav class="flex flex-col items-center justify-start flex-1 mt-8">
+      <div class="w-11/12 max-w-sm mx-auto p-6 flex flex-col items-center">
+      <ul class="flex flex-col w-full font-barlow">
+        <li><a href="./index.html" class="block uppercase text-white text-lg py-4 w-full text-left font-light tracking-widest text-lg
+          border-r-2 border-transparent hover:border-white transition-colors duration-300">
+          <span class="font-bold">00</span> Home</a></li>
+        <li><a href="./destinations.html" class="block uppercase text-white text-lg py-4 w-full text-left font-light tracking-widest text-lg
+          border-r-2 border-transparent hover:border-white transition-colors duration-300">
+          <span class="font-bold">01</span> Destination</a></li>
+        <li><a href="./crew.html" class="block uppercase text-white text-lg py-4 w-full text-left font-light tracking-widest text-lg
+          border-r-2 border-transparent hover:border-white transition-colors duration-300">
+          <span class="font-bold">02</span> Crew</a></li>
+        <li><a href="./technology.html" class="block uppercase text-white text-lg py-4 w-full text-left font-light tracking-widest text-lg
+          border-r-2 border-white hover:border-white transition-colors duration-300">
+          <span class="font-bold">03</span> Technology</a></li>
+      </ul>
+      </div>
+    </nav>
+  </div>
+  
+  
+  
+<header class="flex items-center justify-between w-full px-6 py-6">
+  <img src="./assets/shared/logo.svg" alt="Space Tourism Logo">
+
+  
+  <div class="hidden lg:block flex-1 h-px bg-white/20 mx-8 z-10 relative"></div>
+
+  
+  <nav class="hidden md:block backdrop-blur-md bg-white/5 border-b border-white/10">
+    <ul class="flex gap-8 px-12 py-6 uppercase tracking-widest text-sm text-white">
+      <li>
+        <a href="./index.html" class="font-barlow text-lg tracking-widest flex gap-2 pb-6 border-b-2 border-transparent hover:border-white/50 transition-colors duration-300">
+          <span class="font-bold">00</span> Home
+        </a>
+      </li>
+      <li>
+        <a href="./destinations.html" class="font-barlow text-lg tracking-widest flex gap-2 pb-6 border-b-2 border-transparent hover:border-white/50 transition-colors duration-300">
+          <span class="font-bold">01</span> Destination
+        </a>
+      </li>
+      <li>
+        <a href="./crew.html" class="font-barlow text-lg tracking-widest flex gap-2 pb-6 border-b-2 border-transparent hover:border-white/50 transition-colors duration-300">
+          <span class="font-bold">02</span> Crew
+        </a>
+      </li>
+      <li>
+        <a href="./technology.html" class="font-barlow text-lg tracking-widest flex gap-2 pb-6 border-b-2 border-white hover:border-white/50 transition-colors duration-300">
+          <span class="font-bold">03</span> Technology
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  
+  <button aria-label="Open Menu" class="md:hidden" id="open-menu-btn">
+    <img src="./assets/shared/icon-hamburger.svg" alt="Menu Icon">
+  </button>
+</header>
+
+<main class="max-w-7xl mx-auto flex flex-col items-center mt-8 px-4 md:mt-16 md:gap-12 lg:flex-row lg:justify-between lg:items-start lg:gap-24 lg:px-12">
+  <div class="flex flex-col w-full lg:w-1/2 gap-8 lg:gap-12">
+    <h1 class="font-barlow tracking-widest uppercase text-sm md:text-base lg:text-lg mb-8 lg:mb-12">
+      <span class="text-gray-500 font-bold mr-4">03</span>
+      Space Launch 101
+    </h1>
+    <div class="flex flex-col lg:flex-row lg:items-start gap-8 lg:gap-12">
+      <div id="tech-stepper" class="flex flex-row lg:flex-col items-center justify-center gap-4 lg:gap-8 mb-6 lg:mb-0">
+      </div>
+      <div id="tech-content" class="transition-opacity duration-300 opacity-100 text-center lg:text-left">
+        <p class="font-bellefair tracking-widest uppercase text-gray-400 mb-4 text-lg">The terminology...</p>
+        <h3 id="tech-name" class="font-bellefair text-3xl md:text-5xl lg:text-6xl uppercase mb-6"></h3>
+        <p id="tech-description" class="font-barlow text-lg text-gray-400 mb-2 tracking-wide"></p>
+        <p id="tech-bio" class="font-barlow text-base text-gray-400 leading-relaxed max-w-md mb-8"></p>
+      </div>
+    </div>
+  </div>
+  <div class="w-full lg:w-1/2 flex justify-center items-center mt-12 lg:mt-0">
+    <div id="image-content" class="w-full max-w-xl">
+      <img id="tech-image" src="" alt="Technology Image" class="w-full h-auto transition-opacity duration-300 opacity-100 rounded-lg shadow-xl">
+    </div>
+  </div>
+</main>
+
+  <script src="./script/technology.js"></script>
+</body>
+</html>

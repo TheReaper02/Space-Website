@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" class="max-w-[2560px] mx-auto max-h-[1440px] bg-[#0B0D17]">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap" rel="stylesheet">
+
+
+  <style>
+    
+    .font-barlow {
+      font-family: 'Barlow Condensed', sans-serif;
+    }
+
+    .font-bellefair {
+      font-family: 'Bellefair', serif;
+    }
+  </style>
+
+
+  <script src="https://cdn.tailwindcss.com/"></script>
+  
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body class="bg-[url('./assets/home/background-home-mobile.jpg')] md:bg-[url('./assets/home/background-home-tablet.jpg')] lg:bg-[url('./assets/home/background-home-desktop.jpg')] bg-cover bg-no-repeat text-center text-white w-full min-h-screen overflow-x-hidden">
+  
+  <div id="mobile-menu" class="fixed top-0 right-0 w-[70vw] h-full z-50 flex flex-col justify-between transform translate-x-full transition-transform duration-300 backdrop-blur-md lg:hidden">
+    <div class="flex justify-between items-center w-11/12 max-w-sm mx-auto mt-8 mb-6 md:w-full md:max-w-none md:mx-0 md:px-6">
+      <button aria-label="Close Menu" class="absolute top-8 right-8 z-50">
+        <img src="./assets/shared/icon-close.svg" alt="Close Menu Icon" class="h-6 w-6">
+      </button>
+    </div>
+    <nav class="flex flex-col items-center justify-start flex-1 mt-8">
+      <div class="w-11/12 max-w-sm mx-auto p-6 flex flex-col items-center">
+      <ul class="flex flex-col w-full font-barlow">
+        <li><a href="./index.html" class="block uppercase text-white text-lg py-4 w-full text-left font-light tracking-widest text-lg
+          border-r-2 border-white hover:border-white transition-colors duration-300">
+          <span class="font-barlow font-bold tracking-widest">00</span> Home</a></li>
+        <li><a href="./destinations.html" class="block uppercase text-white text-lg py-4 w-full text-left font-light tracking-widest text-lg
+          border-r-2 border-transparent hover:border-white transition-colors duration-300">
+          <span class="font-barlow font-bold tracking-widest">01</span> Destination</a></li>
+        <li><a href="./crew.html" class="block uppercase text-white text-lg py-4 w-full text-left font-light tracking-widest text-lg
+          border-r-2 border-transparent hover:border-white transition-colors duration-300">
+          <span class="font-barlow font-bold tracking-widest">02</span> Crew</a></li>
+        <li><a href="./technology.html" class="block uppercase text-white text-lg py-4 w-full text-left font-light tracking-widest text-lg
+          border-r-2 border-transparent hover:border-white transition-colors duration-300">
+          <span class="font-barlow font-bold tracking-widest">03</span> Technology</a></li>
+      </ul>
+      </div>
+    </nav>
+  </div>
+  
+  
+  
+<header class="flex items-center justify-between w-full px-6 py-6">
+  <img src="./assets/shared/logo.svg" alt="Space Tourism Logo">
+
+  
+  <div class="hidden lg:block flex-1 h-px bg-white/20 mx-8 z-10 relative"></div>
+
+  
+  <nav class="hidden md:block backdrop-blur-md bg-white/5 border-b border-white/10">
+    <ul class="flex gap-8 px-12 py-6 uppercase tracking-widest text-sm text-white">
+      <li>
+        <a href="./index.html" class="font-barlow text-lg tracking-widest flex gap-2 pb-6 border-b-2 border-white hover:border-white/50 transition-colors duration-300">
+          <span class="font-bold">00</span> Home
+        </a>
+      </li>
+      <li>
+        <a href="./destinations.html" class="font-barlow text-lg tracking-widest flex gap-2 pb-6 border-b-2 border-transparent hover:border-white/50 transition-colors duration-300">
+          <span class="font-bold">01</span> Destination
+        </a>
+      </li>
+      <li>
+        <a href="./crew.html" class="font-barlow text-lg tracking-widest flex gap-2 pb-6 border-b-2 border-transparent hover:border-white/50 transition-colors duration-300">
+          <span class="font-bold">02</span> Crew
+        </a>
+      </li>
+      <li>
+        <a href="./technology.html" class="font-barlow text-lg tracking-widest flex gap-2 pb-6 border-b-2 border-transparent hover:border-white/50 transition-colors duration-300">
+          <span class="font-bold">03</span> Technology
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  
+  <button aria-label="Open Menu" class="md:hidden" id="open-menu-btn">
+    <img src="./assets/shared/icon-hamburger.svg" alt="Menu Icon">
+  </button>
+</header>
+
+  <section class="relative w-full flex justify-center bg-center">
+    <div class="max-w-7xl w-full flex flex-col items-center gap-8 py-10 px-6 md:py-20 md:gap-12 lg:flex-row lg:items-end lg:justify-between lg:h-[calc(100vh-120px)] lg:px-12 mx-auto">
+      <div class="flex flex-col items-center lg:items-start text-center lg:text-left gap-8 lg:gap-12 flex-1">
+          <p class="font-barlow uppercase tracking-widest text-blue-200 font-light text-[1.25rem] md:text-2xl lg:text-2xl md:mb-4 lg:mb-8">So, you want to travel to</p>
+          <h1 class="font-bellefair uppercase text-white text-[5rem] md:text-[9rem] lg:text-[10rem] leading-none">Space</h1>
+          <p class="font-barlow font-light tracking-widest text-blue-200 text-[1.25rem] md:text-xl lg:text-2xl max-w-xl lg:max-w-md lg:mx-0">Let’s face it; if you want to go to space, you might as well genuinely go to outer space and not hover kind of on the edge of it.
+            Well sit back, and relax because we’ll give you a truly out of this world experience!</p>
+      </div>
+      <div class="flex justify-center lg:justify-end flex-1 w-full lg:w-auto mt-12 lg:mt-0">
+        <a href="./destinations.html" class="bg-white text-black uppercase text-[1.25rem] md:text-2xl lg:text-4xl font-bellefair tracking-widest w-40 h-40 md:w-60 md:h-60 lg:w-72 lg:h-72 rounded-full flex items-center justify-center transition-transform duration-300 hover:scale-110 ring-0 hover:ring-8 hover:ring-white/30 shadow-xl">Explore</a>
+      </div>
+    </div>
+  </section>
+
+  <script src="./script/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" class="max-w-[2560px] mx-auto max-h-[1440px] bg-[#0B0D17]">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bellefair&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Space tourism website</title>
+
+  <style>
+    
+    .font-barlow {
+      font-family: 'Barlow Condensed', sans-serif;
+    }
+
+    .font-bellefair {
+      font-family: 'Bellefair', serif;
+    }
+  </style>
+  <script src="https://cdn.tailwindcss.com/"></script>
+</head>
+<body class="bg-[url('./assets/crew/background-crew-mobile.jpg')] md:bg-[url('./assets/crew/background-crew-tablet.jpg')] lg:bg-[url('./assets/crew/background-crew-desktop.jpg')] bg-cover bg-no-repeat text-center text-white w-full h-full overflow-x-hidden">
+    <div id="mobile-menu" class="fixed top-0 right-0 w-[70vw] h-full z-50 flex flex-col justify-between transform translate-x-full transition-transform duration-300 backdrop-blur-md lg:hidden">
+    <div class="flex justify-between items-center w-11/12 max-w-sm mx-auto mt-8 mb-6 md:w-full md:max-w-none md:mx-0 md:px-6">
+      <button aria-label="Close Menu" class="absolute top-8 right-8 z-50">
+        <img src="./assets/shared/icon-close.svg" alt="Close Menu Icon" class="h-6 w-6">
+      </button>
+    </div>
+    <nav class="flex flex-col items-center justify-start flex-1 mt-8">
+      <div class="w-11/12 max-w-sm mx-auto p-6 flex flex-col items-center">
+      <ul class="flex flex-col w-full font-barlow">
+        <li><a href="./index.html" class="block uppercase text-white text-lg py-4 w-full text-left font-light tracking-widest text-lg
+          border-r-2 border-transparent hover:border-white transition-colors duration-300">
+          <span class="font-bold">00</span> Home</a></li>
+        <li><a href="./destinations.html" class="block uppercase text-white text-lg py-4 w-full text-left font-light tracking-widest text-lg
+          border-r-2 border-transparent hover:border-white transition-colors duration-300">
+          <span class="font-bold">01</span> Destination</a></li>
+        <li><a href="./crew.html" class="block uppercase text-white text-lg py-4 w-full text-left font-light tracking-widest text-lg
+          border-r-2 border-white hover:border-white transition-colors duration-300">
+          <span class="font-bold">02</span> Crew</a></li>
+        <li><a href="./technology.html" class="block uppercase text-white text-lg py-4 w-full text-left font-light tracking-widest text-lg
+          border-r-2 border-transparent hover:border-white transition-colors duration-300">
+          <span class="font-bold">03</span> Technology</a></li>
+      </ul>
+      </div>
+    </nav>
+  </div>
+  
+  
+  
+<header class="flex items-center justify-between w-full px-6 py-6">
+  <img src="./assets/shared/logo.svg" alt="Space Tourism Logo">
+
+  
+  <div class="hidden lg:block flex-1 h-px bg-white/20 mx-8 z-10 relative"></div>
+
+  
+  <nav class="hidden md:block backdrop-blur-md bg-white/5 border-b border-white/10">
+    <ul class="flex gap-8 px-12 py-6 uppercase tracking-widest text-sm text-white">
+      <li>
+        <a href="./index.html" class="font-barlow text-lg tracking-widest flex gap-2 pb-6 border-b-2 border-transparent hover:border-white/50 transition-colors duration-300">
+          <span class="font-bold">00</span> Home
+        </a>
+      </li>
+      <li>
+        <a href="./destinations.html" class="font-barlow text-lg tracking-widest flex gap-2 pb-6 border-b-2 border-transparent hover:border-white/50 transition-colors duration-300">
+          <span class="font-bold">01</span> Destination
+        </a>
+      </li>
+      <li>
+        <a href="./crew.html" class="font-barlow text-lg tracking-widest flex gap-2 pb-6 border-b-2 border-white hover:border-white/50 transition-colors duration-300">
+          <span class="font-bold">02</span> Crew
+        </a>
+      </li>
+      <li>
+        <a href="./technology.html" class="font-barlow text-lg tracking-widest flex gap-2 pb-6 border-b-2 border-transparent hover:border-white/50 transition-colors duration-300">
+          <span class="font-bold">03</span> Technology
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  
+  <button aria-label="Open Menu" class="md:hidden" id="open-menu-btn">
+    <img src="./assets/shared/icon-hamburger.svg" alt="Menu Icon">
+  </button>
+</header>
+
+
+<main class="relative flex flex-col lg:flex-row items-end lg:items-end min-h-screen px-5 lg:px-20 py-8 overflow-hidden">
+
+  
+  <h2 class="absolute top-8 left-5 lg:left-20 font-barlow tracking-widest uppercase text-sm text-gray-400">
+    <span class="font-bold text-white mr-4">02</span>Meet your crew
+  </h2>
+
+  
+  <div class="flex flex-col items-center lg:items-start text-center lg:text-left w-full lg:w-1/2 mt-24 lg:mb-24 z-10">
+    
+    <div id="crew-content" class="transition-opacity duration-300 opacity-100">
+      <p id="crew-role" class="font-barlow text-base uppercase text-gray-400 mb-2"></p>
+      <h3 id="crew-name" class="font-bellefair text-3xl md:text-5xl lg:text-6xl uppercase mb-6"></h3>
+      <p id="crew-bio" class="font-barlow text-base text-gray-400 leading-relaxed max-w-md mb-8"></p>
+    </div>
+
+    
+    <div id="crew-dots" class="flex gap-4 mb-8 lg:mb-0"></div>
+
+  </div>
+
+  
+<div class="relative flex-shrink-0 flex justify-center w-full lg:w-1/2">
+  <img id="crew-image" src="" alt="" class="w-64 md:w-72 lg:w-full lg:max-w-lg object-contain object-bottom">
+  <div class="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-[#0d0d1a] to-transparent"></div>
+</div>
+
+</main>
+
+  <script src="./script/crew.js"></script>
+</body>
+</html>
