@@ -10,5 +10,5 @@ This project is a responsive multi-page website built as a Frontend Mentor chall
 
 ## Project Showcase
 
-![Project Overview](starter-code/assets/PO.png)
+![Project Overview](PO.png)
 
